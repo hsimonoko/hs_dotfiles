@@ -1,0 +1,18 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Hope Simonoko
+	email = hope.simonoko@colorado.edu
+[core]
+	excludesfile = /Users/hosi8088/.gitignore
+	autocrlf = input
+	whitespace = cr-at-eol
+[alias]
+	lol = log --graph --decorate --oneline
+	lola = log --graph --decorate --oneline --all
+	root = rev-parse --show-toplevel
+[init]
+	defaultBranch = main
